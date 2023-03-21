@@ -6,6 +6,14 @@ public class App {
     }
 
     void pyramidOfNumber(int number) {
-        System.out.println("functional");
+        for(int i = 1; i < number; i++) {
+            int value = i;
+            String text = "";
+            while(value > 0) {
+                text += i;
+                value--;
+            }
+            System.out.println(text);
+        }
     }
 }
